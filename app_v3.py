@@ -9,7 +9,7 @@ from datetime import datetime
 # CONFIG
 # =========================================================
 
-API_KEY = ""  
+API_KEY = st.secrets["API_KEY"] 
 
 genai.configure(api_key=API_KEY)
 text_model = genai.GenerativeModel("gemini-2.5-flash")
